@@ -1,0 +1,22 @@
+extends layout
+
+block content
+
+  if error
+    p Error getting dynamic content.
+  else
+  div.container
+    for item in items
+        div.panel
+          a.panel-heading.heading(href = '/catalog'+item.url )  #{item.name}
+          div.panel-body
+          h6.list-group-item Price: $#{item.price}
+          h6.list-group-item Stock: #{item.stock}
+          hr
+
+
+
+  hr
+  a(href='/catalog/item/create') Create Item
+  
+

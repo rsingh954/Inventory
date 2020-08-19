@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  h1.title= title
+  p Welcome!
+
+  if error
+    p Error getting dynamic content.
+  else
+    for item in list
+      div.category
+        a(href='/catalog/'+item.id) #{item.name} 
