@@ -41,7 +41,6 @@ exports.office_detail = function (req, res, next) {
 
 // Display item create form on GET.
 exports.office_create_get = function (req, res, next) {
-  console.log({req})
   async.parallel(
     {
       category: function (callback) {
@@ -65,7 +64,7 @@ exports.office_create_post = [
   // Convert the categories to an array.
   (req, res, next) => {
     if (!(req.body.category instanceof Array)) {
-      if(req.body.category == null){req.body.category = '5f3af3b4e25521a44ee0342d'};//default is office supplies
+      if(req.body.category == null){req.body.category = '5f3af3b4e25521a44ee0342d'}; //default is office supplies
       if (typeof req.body.category === "undefined") req.body.category = [];
       else req.body.category = new Array(req.body.category);
     }
