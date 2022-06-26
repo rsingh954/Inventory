@@ -181,10 +181,12 @@ exports.item_update_get = function(req, res, next){
       err.status = 404;
       return next(err);
     }
+
     res.render("item_form", {
       title: results.category.name,
       err: err,
       categories: results.category,
+      item: results.item
     });
   });
 };

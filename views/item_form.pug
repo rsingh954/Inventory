@@ -11,7 +11,7 @@ block content
   form(method='POST' action='')
     div.form-group
       label(for='name') Name:
-      input#name.form-control(type='text', placeholder='Name of item' name='name' required='true' value=(undefined===item ? '' : item.name) )
+      input#name.form-control(type='text', placeholder='Name of item' name='name' required='true' value=(item.name) )
 
     div.form-group
       label(for='description') Description:
@@ -27,7 +27,7 @@ block content
        div
          for cat in categories
            div.cat
-             input.checkbox-input(type='checkbox', name='category', id=cat._id, value=cat._id, checked=cat.checked )
+             input.checkbox-input(type='radio', name='category', id=cat._id, value=cat._id, checked=cat.checked )
              label(for=cat._id) #{cat.name}
     button.btn.btn-primary(type='submit') Submit
 
