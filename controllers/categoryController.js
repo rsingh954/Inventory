@@ -11,6 +11,7 @@ exports.index = function(req, res, next) {
   Category.find()
   .exec(function(err, results){
     if(err){return next(err)}
+    console.log(results)
     res.render('cat_list', {title: "Office Market", list: results})
   })
 }

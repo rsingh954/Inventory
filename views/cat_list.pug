@@ -9,8 +9,8 @@ block content
   else
   section#categorySection
     for item in list
-      div.category
-        h3 #{item.name}
-        .category-box 
-          img(src="/images/furniture.jpg")
-          //- a(href='/catalog/'+item.id) #{item.name} 
+      a(href='/catalog/'+item.id)
+        div.category
+          h3 #{item.name}
+          .category-box 
+            img(src=`/images/${item.name}.jpg`)

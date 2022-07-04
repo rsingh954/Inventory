@@ -8,6 +8,9 @@ body {
 a {
   color: #00b7ff;
 }
+a:hover {
+  text-decoration: none !important;
+}
 img {
   width: 100%;
 }
