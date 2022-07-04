@@ -7,6 +7,10 @@ block content
   if error
     p Error getting dynamic content.
   else
+  section#categorySection
     for item in list
       div.category
-        a(href='/catalog/'+item.id) #{item.name} 
+        h3 #{item.name}
+        .category-box 
+          img(src="/images/furniture.jpg")
+          //- a(href='/catalog/'+item.id) #{item.name} 

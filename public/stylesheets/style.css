@@ -1,23 +1,23 @@
-
 body {
-
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  margin:0;
-  padding:0;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
 a {
-  color: #00B7FF;
+  color: #00b7ff;
 }
-
-.category{
+img {
+  width: 100%;
+}
+.category {
   display: flex;
   flex-direction: column;
   padding: 80px;
   border: 1px solid black;
   text-align: center;
-  width:80%;
+  width: 80%;
   border-radius: 2em;
   background-color: lightyellow;
 }
@@ -25,59 +25,56 @@ a {
   font-size: 24px;
 }
 
-.heading{
+.heading {
   font-size: 16px;
 }
-.page-header{
+.page-header {
   padding: 15px;
   text-align: center;
-  background: #00B7FF;
+  background: #00b7ff;
   color: white;
   font-size: 30px;
-  margin-bottom:17px;
+  margin-bottom: 17px;
   width: auto;
-
 }
-.page-header a{
+.page-header a {
   color: white;
 }
-.page-header a:hover{
+.page-header a:hover {
   text-decoration: none;
-
 }
-.card-text{
+.card-text {
   padding-left: 15px;
 }
 
-.col-xl-10 div { 
+.col-xl-10 div {
   margin-bottom: 15px;
 }
 
-.panel{
-  width:480px;
+.panel {
+  width: 480px;
 }
 
-.cat{
+.cat {
   display: inline;
-  padding-right:10px;
+  padding-right: 10px;
 }
 
-.container{
+.container {
   display: grid;
-  grid-template-rows: 1fr 1fr ;
-  grid-template-columns: 1fr 1fr ;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   justify-content: space-between;
 }
-.error{
+.error {
   background-color: lightcoral;
   width: 100%;
   height: 50px;
-
 }
-.warning{
+.warning {
   position: absolute;
   font-size: 24px;
-  color:red;
+  color: red;
   list-style-type: none;
   left: 10%;
   padding-top: 10px;
@@ -90,7 +87,7 @@ a {
 @keyframes slidein {
   from {
     margin-left: 100%;
-    width: 300%; 
+    width: 300%;
   }
 
   to {
@@ -104,39 +101,39 @@ a {
   [class*="sidebar-nav"] {
     display: flex;
     flex-direction: row;
-    top:0;
+    top: 0;
     z-index: 1; /* Stay on top */
     height: 100%; /* 100% Full-height */
     width: auto; /* 0 width - change this with JavaScript */
     position: relative; /* Stay in place */
     left: 0;
-    
+
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
   }
-  .page-header{
+  .page-header {
     width: 100%;
   }
-  .col-xl-10 a{
-    color: #00B7FF;
+  .col-xl-10 a {
+    color: #00b7ff;
   }
-  .panel{
-    width:120px ;
+  .panel {
+    width: 120px;
   }
 
-  li{
+  li {
     padding-left: 35px;
   }
-  ul li{
+  ul li {
     list-style-type: none;
   }
-  .category{
+  .category {
     border-radius: 1%;
     text-align: center;
-    width:100%
+    width: 100%;
   }
-  .cat{
+  .cat {
     display: flex;
     flex-direction: row;
-    padding-right:10px;
+    padding-right: 10px;
   }
 }
