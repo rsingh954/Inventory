@@ -18,11 +18,9 @@ img {
   display: flex;
   flex-direction: column;
   padding: 80px;
-  border: 1px solid black;
   text-align: center;
   width: 80%;
   border-radius: 2em;
-  background-color: lightyellow;
 }
 .category a {
   font-size: 24px;
